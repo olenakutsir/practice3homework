@@ -35,7 +35,35 @@
                  <td>+</td>
             </tr>
             
-            
+            <br>
+        <form method="GET" action="">
+            <fieldset>
+            <label for="name">Name:</label>
+            <input id="name" type="text" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            </fieldset>
+            <br>
+            <label for="car">Car Plate Number:</label>
+            <input id="car" type="text" required pattern="[A-Z]{2}[0-9]{6}[A-Z]{2}" title="Sample: AA1234BB">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <br>
+            <select name="cars">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+            </select>
+            <br>
+            <textarea name="message" rows="10" cols="30" pattern="[A-Z]{2}[0-9]{6}[A-Z]{2}">
+            The cat was playing in the garden.
+            </textarea>
+            <br>
+            <input type="submit">
+       </form>
             
             
             
